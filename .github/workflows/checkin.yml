@@ -33,7 +33,7 @@ jobs:
         timeout-minutes: 5
         env:
           GLADOS_COOKIE: ${{ secrets.GLADOS_COOKIE }}
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
 
       - name: Retry on Failure
@@ -45,5 +45,5 @@ jobs:
         timeout-minutes: 5
         env:
           GLADOS_COOKIE: ${{ secrets.GLADOS_COOKIE }}
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
